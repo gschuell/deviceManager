@@ -48,7 +48,7 @@ public class DeviceRepository {
 
     public DeviceRecord getDeviceByMachineCode(String machineCode) {
         DeviceRecord tempDevice = deviceStore.stream()
-                .filter(deviceRecord-> machineCode.equals(deviceRecord.getSerialNumber()))
+                .filter(deviceRecord-> machineCode.equals(deviceRecord.getMachineCode()))
                 .findAny()
                 .orElse(null);
 
