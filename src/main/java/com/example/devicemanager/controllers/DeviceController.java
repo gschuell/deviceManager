@@ -83,7 +83,7 @@ public class DeviceController {
         return returnValue;
     }
 
-    @RequestMapping(value = "/fetchbymachinecode/{machinecode}", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/fetchbymachinecode/{machineCode}", method = RequestMethod.GET, produces = "application/json")
     public String getByMachineCode(@PathVariable String machineCode) {
 
         String returnValue = null;
